@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vansh Khanna | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #0f3460;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            color: #e94560;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #e94560;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+            background-color: #16213e;
+            border-radius: 15px;
+            margin: 0 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: slide-in 1s ease-out;
+        }
+
+        .hero-text {
+            max-width: 50%;
+            animation: fade-in 2s ease-in;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #e94560, #0f3460);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: text-anim 3s infinite alternate;
+        }
+
+        .hero-text p {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-text .typewriter {
+            display: inline;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #e94560;
+            animation: typewriter 4s steps(40) 1s 1 normal both;
+        }
+
+        .hero-photo {
+            width: 300px; /* Increased size */
+            height: 300px; /* Increased size */
+            border-radius: 50%;
+            border: 5px solid #e94560;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-photo:hover {
+            transform: scale(1.1);
+        }
+
+        /* Keyframes for Animations */
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes text-anim {
+            from {
+                letter-spacing: 2px;
+            }
+            to {
+                letter-spacing: 8px;
+            }
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar a {
+                margin: 10px 0;
+            }
+
+            .hero-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 0 10px;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .hero-photo {
+                width: 250px; /* Adjusted for smaller screens */
+                height: 250px; /* Adjusted for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="logo">My Portfolio</a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Hi, welcome to my portfolio.</h1>
+            <p>My name is Vansh Khanna.<br><span class="typewriter">I am a Frontend Web Developer.</span></p>
+        </div>
+        <img src="Screenshot 2024-08-27 220335.png" alt="Vansh Khanna" class="hero-photo">
+    </div>
+
+</body>
+</html>
+

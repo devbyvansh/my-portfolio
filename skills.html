@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Vansh Khanna</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a2e;
+            color: #fff;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #0f3460;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            color: #e94560;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #e94560;
+            color: #fff;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #16213e;
+            border-radius: 15px;
+            margin: 40px 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: fade-in 1s ease-in;
+        }
+
+        .skills-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #e94560;
+        }
+
+        .skills-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skills-logos img {
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skills-logos img:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar a {
+                margin: 10px 0;
+            }
+
+            .skills-logos img {
+                width: 80px;
+                height: 80px;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="logo">My Portfolio</a>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <div class="skills-section">
+        <h1>My Skills</h1>
+        <div class="skills-logos">
+            <img src="html.logo.png" alt="HTML">
+            <img src="csslogo.png" alt="CSS">
+            <img src="bootstrap.png" alt="bootstrap">
+            <img src="pythonlogo.png" alt="Python">
+            <img src="tailwindlogo.png" alt="Tailwind CSS">
+           
+        </div>
+    </div>
+
+</body>
+</html>
